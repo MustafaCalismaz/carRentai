@@ -1,6 +1,5 @@
 package kodlama.io.carRentaI.entities;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,15 +8,17 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @AllArgsConstructor
-@Table(name = "brand")
+@Table(name = "color")
 @NoArgsConstructor
 @Entity
 @Getter
 @Setter
-public class Brand {
+public class Color {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(name = "brand_name")
-    private String brandName;
+
+    @Column(name = "color_name")
+    private String colorName;
+
 }
